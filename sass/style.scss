@@ -1,0 +1,85 @@
+@use './reset' as *;
+@use './addonsmixin' as addons;
+@use './colors' as colors;
+@use './fonts' as fonts;
+// @use './btns' as button;
+
+.top-side{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    // position: absolute;
+    // right: 50%;
+    // top: 50%;
+    // transform: translate(-50%,-50%);      
+}
+
+.top-side-text{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 100px;
+font-size: 6rem;
+
+   
+}
+
+.text{
+    margin-bottom: 0px;
+    // font-family: 'Gruppo', sans-serif;
+    // font-weight: 900;
+    font-family: 'Italiana', sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.dark-line{
+    width: 90vh;
+    height: 2px;
+    background-color: colors.$main-colors;
+}
+
+.logo{
+    img{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.btn-top-side{
+// margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Italiana', sans-serif;
+font-size: 4rem;
+margin-top: 100px;
+padding:20px 50px;
+background-color:#fff;
+border-radius: 25px; 
+a{
+    color: #000;
+}
+a:hover{
+    color: #fff;
+    transition: color .3s;
+}
+}
+.btn-top-side:hover{
+    background-color:colors.$button-colors;
+    color: #fff;
+    border-bottom: 6px solid #000 ;
+    transition: all  .3s;    
+}
+
+
+.about-me{
+    width: 500px;
+    height: 900px;
+    background-image: url('../img/Wojtyczka_self.jpg');
+    background-size: cover;
+}
